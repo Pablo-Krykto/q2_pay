@@ -44,4 +44,12 @@ abstract class DebitStrings {
   String get start;
 
   String get tryAgain;
+
+  String get paperMissing;
+
+  String get warningPaperMissing;
+
+  String get reloadPaper;
+
+  String get consolidatedSales;
 }

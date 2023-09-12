@@ -6,11 +6,12 @@ import 'package:module_debit/widgets/q2_pay_bottom_navigation_bar_widget.dart';
 import 'package:module_debit/widgets/q2_pay_cancel_button_widget.dart';
 import 'package:module_debit/widgets/q2_pay_confirm_button_widget.dart';
 import 'package:module_debit/widgets/q2_pay_payment_app_bar_widget.dart';
+import 'package:module_debit/widgets/q2_pay_warning_widget.dart';
 import 'package:module_external_dependencies/flutter_modular.dart';
 import 'package:module_external_dependencies/flutter_svg.dart';
 
-class ApprovedPaymentPage extends StatelessWidget {
-  const ApprovedPaymentPage({super.key});
+class PaperMissingPage extends StatelessWidget {
+  const PaperMissingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,17 +20,21 @@ class ApprovedPaymentPage extends StatelessWidget {
         body: Column(children: [
           Padding(
               padding: const EdgeInsets.only(top: Q2PayDimens.sm),
-              child: Text(TranslateDebit.strings.approvedPayment).bodyBaseLargeMedium(color: Q2PayColors.primary)),
+              child: Text(TranslateDebit.strings.paperMissing).bodyBaseLargeMedium(color: Q2PayColors.primary)),
+          const Spacer(),
+          SvgPicture.asset(Q2PayVector.ic_pos.svg,
+              package: Q2PayVector.ic_pos.package, width: Q2PayDimens.xlss, fit: BoxFit.fitWidth),
+          Padding(
+              padding: const EdgeInsets.only(top: Q2PayDimens.xxs),
+              child: Text(TranslateDebit.strings.reloadPaper).bodyBaseRegular()),
           const Spacer(flex: 2),
-          SvgPicture.asset(Q2PayVector.ic_checkmark.svg,
-              package: Q2PayVector.ic_checkmark.package, width: Q2PayDimens.xxsls, fit: BoxFit.fitWidth),
-          const Spacer(flex: 6),
+          const Q2PayWarningWidget(),
+          const Spacer(),
           Q2PayConfirmButtonWidget(
               margin: const EdgeInsets.only(right: Q2PayDimens.xxxlg, left: Q2PayDimens.xxxlg, bottom: Q2PayDimens.xxs),
-              onTap: () => Modular.to.pushNamed(Q2PayRoutes.refusedPayment),
-              child: Text(TranslateDebit.strings.printOut).bodyLargeSemiBold(color: Q2PayColors.monoWhite)),
-          Q2PayCancelButtonWidget(
-              text: TranslateDebit.strings.start, onTap: () => Modular.to.pushNamed(Q2PayRoutes.calculator)),
+              onTap: () => Modular.to.pushNamed(Q2PayRoutes.calculator),
+              child: Text(TranslateDebit.strings.tryAgain).bodyLargeSemiBold(color: Q2PayColors.monoWhite)),
+          Q2PayCancelButtonWidget(text: TranslateDebit.strings.cancel, onTap: () => Modular.to.pop()),
           const Spacer(flex: 3),
         ]),
         bottomNavigationBar: const Q2PayBottomNavigationBarWidget());

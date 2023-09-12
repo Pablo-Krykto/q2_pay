@@ -4,4 +4,5 @@ abstract class Q2PayRoutes {
   static const String payment = '/payment';
   static const String approvedPayment = '/approvedPayment';
   static const String refusedPayment = '/refusedPayment';
+  static const String paperMissing = '/paperMissing';
 }

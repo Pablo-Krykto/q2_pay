@@ -2,6 +2,7 @@ import 'package:module_commons/commons.dart';
 import 'package:module_debit/pages/approved_payment/approved_payment_page.dart';
 import 'package:module_debit/pages/calculator/calculator_page.dart';
 import 'package:module_debit/pages/menu/menu_page.dart';
+import 'package:module_debit/pages/paper_missing/paper_missing_page.dart';
 import 'package:module_debit/pages/payment/payment_page.dart';
 import 'package:module_debit/pages/refused_payment/refused_payment_page.dart';
 import 'package:module_debit/stores/calculator/calculator_store.dart';
@@ -22,5 +23,7 @@ class DebitModule extends Module {
         transition: TransitionType.rightToLeft, child: (context) => const ApprovedPaymentPage());
     r.child(Q2PayRoutes.refusedPayment,
         transition: TransitionType.rightToLeft, child: (context) => const RefusedPaymentPage());
+    r.child(Q2PayRoutes.paperMissing,
+        transition: TransitionType.rightToLeft, child: (context) => const PaperMissingPage());
   }
 }

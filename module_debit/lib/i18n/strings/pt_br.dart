@@ -57,4 +57,16 @@ class DebitPtBR implements DebitStrings {
 
   @override
   String get tryAgain => "Tentar novamente";
+
+  @override
+  String get paperMissing => "FALTA PAPEL";
+
+  @override
+  String get warningPaperMissing => "Os relátórios ainda podem ser impressos no menu ";
+
+  @override
+  String get reloadPaper => "Recarregue o papel da sua maquininha.";
+
+  @override
+  String get consolidatedSales => "Vendas consolidadas";
 }

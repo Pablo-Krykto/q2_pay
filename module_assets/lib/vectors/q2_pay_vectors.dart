@@ -10,7 +10,9 @@ enum Q2PayVector {
   ic_split,
   ic_pay,
   ic_checkmark,
-  ic_misuse
+  ic_misuse,
+  ic_pos,
+  ic_warning
 }
 
 extension Q2PayVectorExtension on Q2PayVector {
