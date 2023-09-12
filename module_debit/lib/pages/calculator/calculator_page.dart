@@ -25,13 +25,11 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return Scaffold(
         appBar: Q2PayCalculatorAppBarWidget(onTapMenu: _store.openMenu),
         body: Column(children: [
-          Container(
-              alignment: Alignment.center,
-              margin: const EdgeInsets.only(top: Q2PayDimens.xl),
-              child: Text(TranslateDebit.strings.storeQ2, textAlign: TextAlign.center).bodyMediumMedium()),
+          const Spacer(flex: 3),
+          Text(TranslateDebit.strings.storeQ2, textAlign: TextAlign.center).bodyMediumMedium(),
           TripleBuilder<CalculatorStore, CalculatorViewModel>(
               store: _store, builder: (_, triple) => Q2PayAmountWidget(controller: triple.state.controller)),
-          const Spacer(),
+          const Spacer(flex: 2),
           Q2PayNumericKeyboardWidget(onTap: _store.onTapCalculatorButton),
           Q2PayConfirmButtonWidget(onTap: _store.onTapConfirmButton)
         ]));

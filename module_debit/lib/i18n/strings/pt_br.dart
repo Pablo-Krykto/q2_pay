@@ -6,4 +6,28 @@ class DebitPtBR implements DebitStrings {
 
   @override
   String get confirm => "CONFIRMAR";
+
+  @override
+  String get formPayment => "FORMA DE PAGAMENTO";
+
+  @override
+  String get chooseFormPayment => "Escolha a forma de pagamento";
+
+  @override
+  String get credit => "CRÉDITO";
+
+  @override
+  String get debit => "DÉBITO";
+
+  @override
+  String get flexRate => "TAXA FLEX";
+
+  @override
+  String get pix => "PIX";
+
+  @override
+  String get split => "SPLIT";
+
+  @override
+  String get approachInsertCard => "Aproxime ou insira o cartão";
 }

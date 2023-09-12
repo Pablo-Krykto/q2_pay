@@ -10,4 +10,20 @@ abstract class DebitStrings {
   String get storeQ2;
 
   String get confirm;
+
+  String get formPayment;
+
+  String get chooseFormPayment;
+
+  String get credit;
+
+  String get debit;
+
+  String get flexRate;
+
+  String get pix;
+
+  String get split;
+
+  String get approachInsertCard;
 }

@@ -14,6 +14,7 @@ class Q2PayNumericKeyboardWidget extends StatelessWidget {
     return GridView.count(
         crossAxisCount: 3,
         shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         padding: const EdgeInsets.symmetric(horizontal: Q2PayDimens.xss),
         mainAxisSpacing: Q2PayDimens.xxxnano,
         crossAxisSpacing: Q2PayDimens.xxxnano,

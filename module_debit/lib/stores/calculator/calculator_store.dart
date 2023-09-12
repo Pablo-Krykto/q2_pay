@@ -1,4 +1,6 @@
+import 'package:module_commons/commons.dart';
 import 'package:module_debit/view_models/calculator/calculator_view_model.dart';
+import 'package:module_external_dependencies/flutter_modular.dart';
 import 'package:module_external_dependencies/flutter_triple.dart';
 
 class CalculatorStore extends Store<CalculatorViewModel> {
@@ -32,7 +34,7 @@ class CalculatorStore extends Store<CalculatorViewModel> {
     }
   }
 
-  void openMenu() {}
+  void openMenu() => Modular.to.pushNamed(Q2PayRoutes.menu);
 
   void onTapConfirmButton() {}
 }

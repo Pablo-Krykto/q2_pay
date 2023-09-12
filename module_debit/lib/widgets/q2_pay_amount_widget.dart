@@ -10,7 +10,7 @@ class Q2PayAmountWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.only(top: Q2PayDimens.xss),
+        padding: const EdgeInsets.only(top: Q2PayDimens.xxhlls),
         child: Stack(alignment: Alignment.center, children: [
           Align(
               alignment: Alignment.centerLeft,
