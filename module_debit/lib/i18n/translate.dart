@@ -37,7 +37,11 @@ abstract class DebitStrings {
 
   String get approvedPayment;
 
+  String get refusedPayment;
+
   String get printOut;
 
   String get start;
+
+  String get tryAgain;
 }

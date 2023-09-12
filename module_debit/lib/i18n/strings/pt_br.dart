@@ -41,7 +41,7 @@ class DebitPtBR implements DebitStrings {
   String get total => "Total";
 
   @override
-  String get cancel => "CANCELAR";
+  String get cancel => "Cancelar";
 
   @override
   String get approvedPayment => "PAGAMENTO APROVADO";
@@ -51,4 +51,10 @@ class DebitPtBR implements DebitStrings {
 
   @override
   String get start => "Início";
+
+  @override
+  String get refusedPayment => "PAGAMENTO RECUSADO";
+
+  @override
+  String get tryAgain => "Tentar novamente";
 }

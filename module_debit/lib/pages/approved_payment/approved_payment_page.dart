@@ -26,7 +26,7 @@ class ApprovedPaymentPage extends StatelessWidget {
           const Spacer(flex: 6),
           Q2PayConfirmButtonWidget(
               margin: const EdgeInsets.only(right: Q2PayDimens.xxxlg, left: Q2PayDimens.xxxlg, bottom: Q2PayDimens.xxs),
-              onTap: () => Modular.to.pop(),
+              onTap: () => Modular.to.pushNamed(Q2PayRoutes.refusedPayment),
               child: Text(TranslateDebit.strings.printOut).bodyLargeSemiBold(color: Q2PayColors.monoWhite)),
           Q2PayCancelButtonWidget(
               text: TranslateDebit.strings.start, onTap: () => Modular.to.pushNamed(Q2PayRoutes.calculator)),
