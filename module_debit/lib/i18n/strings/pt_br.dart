@@ -30,4 +30,16 @@ class DebitPtBR implements DebitStrings {
 
   @override
   String get approachInsertCard => "Aproxime ou insira o cartão";
+
+  @override
+  String get cashCredit => "Crédito à vista";
+
+  @override
+  String get once => "1x de";
+
+  @override
+  String get total => "Total";
+
+  @override
+  String get cancel => "CANCELAR";
 }

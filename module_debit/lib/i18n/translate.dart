@@ -26,4 +26,12 @@ abstract class DebitStrings {
   String get split;
 
   String get approachInsertCard;
+
+  String get cashCredit;
+
+  String get once;
+
+  String get total;
+
+  String get cancel;
 }

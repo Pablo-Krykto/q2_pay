@@ -116,6 +116,16 @@ extension TypographyExtension on Text {
     return _getTextTypography(text: this, textStyle: defaultStyle);
   }
 
+  Text bodyLargeBold({Color? color}) {
+    TextStyle defaultStyle = _getTextStyle(
+        fontSize: TypographyFontSize.large,
+        fontWeight: TypographyFontWeight.bold,
+        height: TypographyLineHeight.body,
+        color: color);
+
+    return _getTextTypography(text: this, textStyle: defaultStyle);
+  }
+
   Text bodyExtraLargeTwoMedium({Color? color}) {
     TextStyle defaultStyle = _getTextStyle(
         fontSize: TypographyFontSize.extraLargeTwo,

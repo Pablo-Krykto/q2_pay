@@ -36,5 +36,5 @@ class CalculatorStore extends Store<CalculatorViewModel> {
 
   void openMenu() => Modular.to.pushNamed(Q2PayRoutes.menu);
 
-  void onTapConfirmButton() {}
+  void onTapConfirmButton() => Modular.to.pushNamed(Q2PayRoutes.payment);
 }
