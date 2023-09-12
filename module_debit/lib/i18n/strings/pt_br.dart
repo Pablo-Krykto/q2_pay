@@ -42,4 +42,13 @@ class DebitPtBR implements DebitStrings {
 
   @override
   String get cancel => "CANCELAR";
+
+  @override
+  String get approvedPayment => "PAGAMENTO APROVADO";
+
+  @override
+  String get printOut => "Imprimir 2º via";
+
+  @override
+  String get start => "Início";
 }

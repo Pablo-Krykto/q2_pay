@@ -8,7 +8,8 @@ enum Q2PayVector {
   ic_flex_rate,
   ic_pix,
   ic_split,
-  ic_pay
+  ic_pay,
+  ic_checkmark
 }
 
 extension Q2PayVectorExtension on Q2PayVector {

@@ -35,7 +35,8 @@ class PaymentPage extends StatelessWidget {
           child: Text(TranslateDebit.strings.total).bodyBaseRegular()),
       const Text("R\$ 3.500,00").bodyLargeMedium(color: Q2PayColors.primary),
       const Spacer(flex: 2),
-      Q2PayCancelButtonWidget(onTap: () => Modular.to.pushNamed("")),
+      Q2PayCancelButtonWidget(
+          text: TranslateDebit.strings.cancel, onTap: () => Modular.to.pushNamed(Q2PayRoutes.approvedPayment)),
       const Spacer(flex: 3),
     ]));
   }

@@ -31,7 +31,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
               store: _store, builder: (_, triple) => Q2PayAmountWidget(controller: triple.state.controller)),
           const Spacer(flex: 2),
           Q2PayNumericKeyboardWidget(onTap: _store.onTapCalculatorButton),
-          Q2PayConfirmButtonWidget(onTap: _store.onTapConfirmButton)
+          Q2PayConfirmButtonWidget(
+              onTap: _store.onTapConfirmButton,
+              child: Text(TranslateDebit.strings.confirm).bodyExtraLargeSemiBold(color: Q2PayColors.monoWhite))
         ]));
   }
 }

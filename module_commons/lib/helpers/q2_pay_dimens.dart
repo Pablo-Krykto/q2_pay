@@ -208,4 +208,7 @@ abstract class Q2PayDimens {
 
   /// xxl = 120
   static const double xxsl = 120;
+
+  /// xxsls = 130
+  static const double xxsls = 130;
 }
